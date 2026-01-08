@@ -66,3 +66,13 @@ print() ,print("|||||||||||||||||||||")
 
 int('42')
 str(3.0)
+R=round(4.9)
+print("round 4.9 is ",R)
+print(),print("what the abs() function returns ? ")
+print(" returns the absolute value of the number  ")
+R=abs(-8.4623)
+print("R is -",R,"but in abs() = ",R)
+print("1 Byte has ",2**3 , "bits")
+decimalValue=8
+binaryValue=bin(decimalValue)
+print("binary value of decimal ",decimalValue," is ",binaryValue)
