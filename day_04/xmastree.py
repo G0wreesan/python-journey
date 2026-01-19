@@ -18,5 +18,11 @@ i=0
 while i<s:
     print(" "*(S-i-1,end=""))
     col=0
-    for col in range(2*i+1)
+    for col in range(2*i+1):
+        if random.randint(1,4)==1:
+            print("O",end="")
+        else:
+            print("^",end="");
+
+
     
