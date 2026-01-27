@@ -1,0 +1,23 @@
+Know how to make assertions with assert statements.
+        
+    | Checking the condition " assert condition " || " Assert condition, "Error message"  "
+    | if condtion true nothing happens 
+    | if condition false crashes the program or raises 'AssertionError'
+    |  
+
+Understand the difference between exceptions and assertions and the roles they play.
+
+
+    |   Exceptions        |     Assertions      |
+    | for users           |     for developers  |
+    | error handling      |     Debugging Tool  |
+    | conExpected failures|     should never fail in right code| 
+    | always active       |     can be disabled after debugging |
+
+Use the logging module to create a trail of clues regarding what your program is doing, and in what order.
+
+
+
+Be able to run your programs under the debugger to identify what is happening behind the scenes.
+Use debugger features such as breakpoints, and inspect the values stored in variables.
+
