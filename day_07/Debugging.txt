@@ -21,3 +21,104 @@ Use the logging module to create a trail of clues regarding what your program is
 Be able to run your programs under the debugger to identify what is happening behind the scenes.
 Use debugger features such as breakpoints, and inspect the values stored in variables.
 
+Assertions
+An assertion is a sanity check that makes sure your code isn’t doing something obviously wrong. We make assertions with an assert statement. If the condition in an assert statement is False, Python raises the AssertionError exception. The following questions test your knowledge of assert statements and how to use assertions to detect problems.
+
+5. “While exceptions are for user errors, assertions are for __obvious/programmer__ errors.”
+
+6. Why is failing fast a good thing?
+    so we could debug the error faster by preventing bad data from spreading
+
+7. Which command line argument to the Python interpreter suppresses assertion checks when running a program?
+        -O 
+        this ' -O ' prevents assertion checks to running python program
+        python -O your_program.py
+
+8. What does assert False do?
+        False == False 
+        it's compulsory mark point in the code to point out the part that code should never run
+
+Logging
+Logging is a great way to understand what’s happening in your program, and in what order.
+ Python’s logging module makes it easy to create a record of custom messages that you write.
+
+9. Alice writes a program with several print() calls for debugging information instead 
+    of using the logging module. 
+    After she’s done programming, she starts removing these print() calls. 
+    What are two possible mistakes she could make while removing them?
+
+    Accidentally removing a print() call that was actually required for program output
+
+    Forgetting to remove some print() calls, leaving unwanted debug output in the final program
+
+    This is exactly why logging is better — you can disable logs without touching code.
+
+For each of the following events, decide what logging level to use for the corresponding 
+log message. (These can be subjective and may have multiple acceptable answers.)
+
+10. An error causes a failure that makes the program crash with no chance of recovery.
+        Critical Log
+11. A particular function in your program, calculate_my_result(), is called.
+        Debug
+12. The program logs the value of a particular variable.
+        Debug
+13. The user requests that the program open a file, but the file doesn’t exist.
+        Error
+14. The program detects that a calculation is wrong but is able to continue running.
+        Warning
+15. The program starts running and needs to record the time and date at which it started.
+        Info
+16. The program keeps track of how many times a while loop had looped before exiting.
+        Debug
+17. The program logs the string the user entered for an input() call.
+        DEBUG
+Mu’s Debugger
+The debugger is a tool that can run a single line of code and then wait for you to tell it to 
+continue. By running your program “under the debugger” like this, 
+you can take as much time as you want to examine the values in the variables at any given point
+during the program’s lifetime, making it a valuable tool for tracking down bugs. 
+
+
+It’s also more efficient than debugging your program by sprinkling print() calls 
+throughout your code and rerunning it over and over.
+
+
+The following questions concern the debugger for the Mu code editor used in Automate the Boring Stuff with Python.
+If you use a different debugger, try answering these questions for it instead.
+
+18. What do you do if you want the program to run at normal speed, 
+    then pause and start the debugger once the execution reaches a particular line of code?
+        Set a breakpoint on that line
+
+19. If the debugger is currently paused on a line of code within a function and 
+    you want it to run the rest of the code in the function at normal speed,
+    then pause once the execution has returned from the function, 
+    which debugger button should you press?
+    step-out
+
+20. Which button should you press if the debugger is currently paused on a line of code
+     and you want it to resume running at normal speed?
+    resume 
+
+
+21. If the debugger is currently paused on a line of code, 
+    how can you immediately terminate the program?
+    Abort
+
+
+22. If the debugger is currently paused on a line of code that is a function call,
+     which debugger button would cause the debugger to pause on the first line in that function?
+        Step into
+
+23. If the debugger is currently paused on a line of code that is a function call, 
+    and you want to run all the code inside that function at normal speed, 
+    then pause again when the execution has returned from the function, 
+    which debugger button should you press?
+        Step over 
+
+Step Into	Go inside the function
+Step Over	Run function without entering
+Step Out	Finish function, return
+Continue	Run normally
+Stop	    Kill program
+Breakpoint	Pause at a chosen line
