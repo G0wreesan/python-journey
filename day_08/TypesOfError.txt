@@ -1,3 +1,6 @@
 Name Error :    A NameError exception in Python occurs when the code attempts to use a variable
                 or function that has not been defined or is not accessible in the current scope. 
 
+NameError.py files explains this 
+
+BadInt :    
