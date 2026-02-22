@@ -1,0 +1,38 @@
+Lists are useful data types, as they allow you to write code that works on any number of values 
+contained in a single variable. 
+
+you can save a list in a variable and pass it to a function then the values inside the list 
+can be accessed via refering to it's numerical value :) 
+
+    1. What is the first index of any list?
+        0
+
+    2. If a variable named spam contains ['cat', 'bat', 'rat', 'hat'], 
+    what does spam[3] evaluate to? 
+    'hat'
+
+    3. If a variable named spam contains ['cat', 'bat', 'rat', 'hat'], 
+    what does spam[4] evaluate to?
+    -null-   indexError
+
+    4. Do all the values in a Python list need to be of the same data type?
+        No 
+
+    5. If a variable named spam contains an empty list, what happens when spam[0] is evaluated?
+        Index indexError
+
+    6. In the expression spam[3], is the [3] also a list?
+        no, it's an index of the element in the list 
+
+    7. What negative index is equivalent to the index in spam[len(spam) - 1]?
+        -1 (always the last item on the list)
+
+    8. What negative index is equivalent to the index in spam[len(spam) - 3]?
+        -3 (counts form the end)
+
+    9. If a variable named spam contains a list, 
+        what is the difference between the statement del spam[0] and the statement del spam?
+        del spam[0] will delete the 1st element in the spam list
+        del spam will dleete the entire variable and
+        any reference to spam will raise a name error in code 
+
