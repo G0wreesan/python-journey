@@ -126,3 +126,14 @@ print("hello 3") or True
 print("hello 4") or False
 """ this will also print hello first and then evaluate False """
 
+
+for i in 'Glory':
+    print(i)
+
+for i in [['cat','dog'],'venom','witch',['weapons','kids','Film']]:
+
+    print(i)
+
+for i in 'Boobs'[0:3]:
+    print(i)
+    
