@@ -36,3 +36,40 @@ can be accessed via refering to it's numerical value :)
         del spam will dleete the entire variable and
         any reference to spam will raise a name error in code 
 
+13. If an expression is using the in and not in operators, what data type does it evaluate to?
+    Bool [True or false]
+
+14. If spam contains the list ['cat', 'dog', 'moose'] and Python runs the statement a, b, c = spam, 
+    what does the b variable contain?
+    'dog'
+
+15. If Python runs the statement a, b, c = 'cat', what does the b variable contain?
+    'a'
+
+16. Say spam contains a list value and Python runs the statement for a, b in enumerate(spam):. 
+    Describe the data that the a and b variables contain.
+    a  = index 
+    b = element in the list
+
+17. What does the random.choice() function return?
+    one random element from the list of elements 
+    +(RANDOM.CHOICE('cat','bat','dog'))
+    
+18. What does the random.shuffle() function do?
+    randomly reorder the elements in the lists 
+
+
+19. If spam contains the list ['cat', 'dog', 'moose'] and Python runs import random and 
+    random.shuffle(spam), what does the expression len(spam) evaluate to?
+    3 
+    shuffling will only the changes the order the elements lined into not the length of list
+
+
+Augmented Assignment Operators
+Augmented assignment operators are shortcuts for changing the value of a variable based on its current value. 
+They exist for the +, -, *, /, and % operators.
+
+Methods 
+Methods are just methods are just like functions excepts it's called on a value,or object
+object.methods();
+
