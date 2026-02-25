@@ -123,3 +123,6 @@ print("hello 2")and False
 print("hello 3") or True
 """ this will print hello because the print function executed first and then True is evaluated"""
 
+print("hello 4") or False
+""" this will also print hello first and then evaluate False """
+
