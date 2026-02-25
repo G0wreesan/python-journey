@@ -73,3 +73,8 @@ Methods
 Methods are just methods are just like functions excepts it's called on a value,or object
 object.methods();
 
+short-circuiiting booleans
+
+in python we can run boolean expressions little faster by without checking the right handside of the operators
+ths is short circuiiting
+
