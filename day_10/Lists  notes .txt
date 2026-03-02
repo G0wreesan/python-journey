@@ -98,4 +98,49 @@ Sequence the Data Types
     51. What does 'Zophie'[9999] evaluate to?
     will raise and index error 
     index is out of range
+
+References 
+    reference are the link  between variable name and an object in memory
+
+    55. Aside from brackets/parentheses, main difference between lists and tuples?
+    lists can be changed 
+    tuples can not be changed
+
+    56.Code to obtain a list from the tuple ('cat', 'dog')
+    list(('cat','dog'))
+
+    57.Code to obtain a tuple from the list ['cat', 'dog']
+    tuple(['cat', 'dog'])
+
+    58.What happens if you run this code?
+    spam = ('cat', 'dog', 'moose')
+    spam[2] = 'cow'
+
+    type error because tuples can not be changed
+
+    59. In Python, variables never contain values. What do they contain?
+    References to values
+    
+    60. The = assignment operator never copies values. What does it copy?
+    references
+
+    61. How many copies of the list exist here?
+    a = ['cat', 'dog', 'moose']
+    b = a
+    c = a
+    only one copy of list because the varibles only store references in memory
+
+    62. How many copies exist here?
+    import copy
+    a = ['cat', 'dog', 'moose']
+    b = copy.copy(a)
+    c = copy.copy(a)
+
+    3 separate lists cuz a,b,c each reference different list objects
+
+    Which function copies [['cat', 'dog'], 'moose'] correctly?
+
+    63. Which function copies [['cat', 'dog'], 'moose'] correctly?
+    copy.decopy()
+
     
